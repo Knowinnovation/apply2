@@ -19,6 +19,10 @@
     vertical-align: baseline;
   }
 
+  a {
+    color:#D64208!important;
+  }
+
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
   }
