@@ -1588,7 +1588,7 @@
     color: #20202a;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.65;
   }
 
@@ -1673,7 +1673,7 @@
 
   h3 {
     font-size: 1.35em;
-    font-weight: 500;
+    font-weight: 800;
     margin-top:1em !important;
     margin-bottom:0.49em !important;
   }
