@@ -1633,7 +1633,7 @@
     }
 
   a {
-    color: #5385c1;
+    color: #37A1BC;
     text-decoration: underline;
   }
 
@@ -1642,8 +1642,8 @@
     }
 
   strong, b {
-    color: #3D4399;
-    font-weight: 800;
+    color: #37A1BC;
+    font-weight: 600;
   }
 
   em, i {
@@ -1670,13 +1670,13 @@
 
   h2 {
     font-size: 2.3em;
-    font-weight: 700;
+    font-weight: 8=600;
 
   }
 
   h3 {
     font-size: 1.35em;
-    font-weight: 900;
+    font-weight: 500;
     margin-top:1em !important;
     margin-bottom:0.49em !important;
   }
@@ -2188,7 +2188,7 @@
 /* Box */
 
   .box {
-    border: solid 2px #3d43993a;
+    border: solid 0px #ebebeb;
     margin-bottom: 2em;
     padding: 1.5em;
   }
@@ -2223,7 +2223,7 @@
         }
 
   aside.box {
-    background: #3d43993a;
+    background: #ebebeb;
   }
 
   @media screen and (min-width: 1024px) {
@@ -2233,7 +2233,7 @@
       float: right;
       display: inline-block;
       margin: 1em 0 1em 2em;
-      background: #3d43993a;
+      background: #ebebeb;
     }
 
   }
@@ -2685,7 +2685,7 @@
     input[type="button"].special,
     button.special,
     .button.special {
-      background-color: #3D4399;
+      background-color: #3768A0;
       color: #ffffff !important;
     }
 
@@ -2694,7 +2694,7 @@
       input[type="button"].special:hover,
       button.special:hover,
       .button.special:hover {
-        background-color: #3D4399;
+        background-color: #3768A0;
       }
 
       input[type="submit"].special:active,
@@ -2702,7 +2702,7 @@
       input[type="button"].special:active,
       button.special:active,
       .button.special:active {
-        background-color: #3D4399;
+        background-color: #3768A0;
       }
 
     input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2975,12 +2975,12 @@
 
     #banner h1 {
       font-size: 3.5em;
-      font-weight: 800;
+      font-weight: 700;
       color: #ffffff;
       line-height: 1em;
       margin: 0 0 0.5em 0;
       padding: 0 2em;
-      text-shadow: 1px 1px 1px #ffffff
+      /* text-shadow: 1px 1px 1px #ffffff */
     }
 
     #banner p {
