@@ -2963,10 +2963,14 @@
 /* Banner */
 
   #banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 12em 0 10em 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.12)) , url('../../images/banner.jpg');
     background-size: cover;
     background-position: center center;
+    height: 500px;
     background-attachment: scroll;
     background-repeat: no-repeat;
     text-align: center;
@@ -2977,10 +2981,10 @@
       font-size: 3.5em;
       font-weight: 700;
       color: #ffffff;
-      line-height: 1em;
+      line-height: 1.1em;
       margin: 0 0 0.5em 0;
-      padding: 0 2em;
-      /* text-shadow: 1px 1px 1px #ffffff */
+      padding: 0 1em;
+      text-shadow: 1px 1px 1px #232536
     }
 
     #banner p {
