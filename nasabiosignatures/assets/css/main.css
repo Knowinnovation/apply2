@@ -1568,7 +1568,7 @@
   }
 
   body {
-    background: #1a1a1a;
+    background: #000000;
   }
 
     body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -2230,7 +2230,7 @@
       float: right;
       display: inline-block;
       margin: 1em 0 1em 2em;
-      background: #3d405b;
+      background: #292930;
     }
 
   }
