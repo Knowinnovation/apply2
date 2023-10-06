@@ -1591,7 +1591,7 @@
   body, input, select, textarea {
     color: #20202a;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 300;
     line-height: 1.65;
   }
@@ -1645,11 +1645,15 @@
       text-decoration: none;
     }
 
-  strong, b {
+  strong.special, b {
     color: #5385c1;
     font-weight: 600;
   }
 
+  strong, b {
+    color: #111;
+    font-weight: 600;
+  }
   em, i {
     font-style: italic;
   }
@@ -1658,7 +1662,7 @@
     margin: 0 0 1em 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h3, h4, h5, h6 {
     color: #5385c1;
     font-weight: 300;
     line-height: 1.5;
@@ -1671,6 +1675,7 @@
     }
 
   h2 {
+    color: #111 !important;
     font-size: 2.5em;
     font-weight: 500;
   }
@@ -2189,7 +2194,8 @@
 /* Box */
 
   .box {
-    border: solid 4px #ebebeb;
+    border: solid 4px #cedbe5;
+    background: #cedbe5;
     margin-bottom: 2em;
     padding: 1.5em;
   }
@@ -2230,8 +2236,8 @@
   @media screen and (min-width: 1024px) {
 
     aside.box {
-      max-width: 600px;
-      float: right;
+      width: 100%;
+      float: none;
       display: inline-block;
       margin: 1em 0 1em 2em;
       background: #ebebeb;
@@ -2861,6 +2867,39 @@
 
   }
 
+  /* Style for the navigation bar */
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #326db2;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar li a {
+  display: inline-block;
+  color: white!important;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navbar .active {
+  background-color: #639ac1;
+}
+
+
 /* Nav */
 
   @media screen and (max-width: 980px) {
@@ -2971,12 +3010,12 @@
     background-attachment: scroll;
     background-repeat: no-repeat;
     text-align: center;
-    border-top: 0.5em solid #5385c1;
+    border-top: 0.5em solid #fff;
   }
 
     #banner h1 {
-      font-size: 3.5em;
-      font-weight: 400;
+      font-size: 4em;
+      font-weight: 800;
       color: #fff;
       line-height: 1em;
       margin: 0 4em 0.5em 4em;

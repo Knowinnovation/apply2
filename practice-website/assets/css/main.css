@@ -2185,7 +2185,7 @@
 /* Box */
 
   .box {
-    border: solid 4px #ebebeb;
+    border: solid 4px #491818;
     margin-bottom: 2em;
     padding: 1.5em;
   }
@@ -2226,8 +2226,8 @@
   @media screen and (min-width: 1024px) {
 
     aside.box {
-      max-width: 600px;
-      float: right;
+      max-width: none;
+      float: none;
       display: inline-block;
       margin: 1em 0 1em 2em;
       background: #ebebeb;
@@ -2862,10 +2862,28 @@
   @media screen and (max-width: 980px) {
 
     #nav {
-      display: none;
+      display: block;
     }
 
   }
+
+  .nav {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* « The magic. */
+}
+
+.nav li {
+    display: inline; /* « More magic. */
+}
+
+.nav a {
+    display: inline-block; /* « Last bit of magic. */
+    padding: 10px;
+}
 
   #navPanel {
     -moz-transform: translatex(20em);
@@ -2877,7 +2895,7 @@
     -ms-transition: -ms-transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
     -webkit-overflow-scrolling: touch;
-    visibility: hidden;
+    visibility: visible;
     overflow-y: auto;
     position: fixed;
     right: 0;
