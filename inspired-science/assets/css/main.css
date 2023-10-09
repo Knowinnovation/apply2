@@ -1686,6 +1686,12 @@
     margin-top:1em !important;
     margin-bottom:0.49em !important;
   }
+  
+  .special-heading {
+    font-size: 1.80em !important;
+    font-weight: 400;
+    color: #20202a !important;
+  }
 
   h4 {
     font-size: 1.1em;
@@ -1825,7 +1831,8 @@
     }
 
       section.wrapper.style1 header h2, article.wrapper.style1 header h2 {
-        color: #fff;
+        color: #fff !important;
+        font-size: 2em;
       }
 
       section.wrapper.style1 header p, article.wrapper.style1 header p {
@@ -1833,7 +1840,7 @@
       }
 
       section.wrapper.style1 h3, article.wrapper.style1 h3 {
-        color: #FFF;
+        color: #FFF !important;
       }
 
     @media screen and (max-width: 980px) {
@@ -2338,12 +2345,19 @@
 
   ul {
     list-style: disc;
-    margin: 0 0 2em 0;
+    margin: 0 0 0em 0;
     padding-left: 1em;
+  }
+
+  .no-bullets {
+    list-style-type: none;
+    margin: 0 0 0em 0;
+    padding: 0 4%;
   }
 
     ul li {
       padding-left: 0.5em;
+      margin-bottom: 15px;
     }
 
     ul.alt {
@@ -2886,7 +2900,7 @@
   display: inline-block;
   color: white!important;
   text-align: center;
-  padding: 14px 50px;
+  padding: 14px 25px;
   text-decoration: none;
   font-size: 1.2em;
 }
@@ -2897,6 +2911,13 @@
 
 .navbar .active {
   background-color: #639ac1;
+}
+
+@media (max-width: 768px) {
+  .navbar li a {
+    padding: 14px 10px; /* Adjust the padding for smaller screens */
+    font-size: 1em; /* Adjust the font size for smaller screens */
+  }
 }
 
 
