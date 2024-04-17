@@ -19,10 +19,6 @@
     vertical-align: baseline;
   }
 
-  a {
-    color:#D64208!important;
-  }
-
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
   }
@@ -1572,7 +1568,7 @@
   }
 
   body {
-    background: #fff;
+    background: #000000;
   }
 
     body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1589,9 +1585,9 @@
 /* Type */
 
   body, input, select, textarea {
-    color: #20202a;
+    color: #f8f8f6;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.65;
   }
@@ -1637,7 +1633,7 @@
     }
 
   a {
-    color: #5385c1;
+    color: #b8b8f3;
     text-decoration: underline;
   }
 
@@ -1645,15 +1641,11 @@
       text-decoration: none;
     }
 
-  strong.special, b {
-    color: #5385c1;
+  strong, b {
+    color: #f8f8f6;
     font-weight: 600;
   }
 
-  strong, b {
-    color: #111;
-    font-weight: 600;
-  }
   em, i {
     font-style: italic;
   }
@@ -1662,8 +1654,8 @@
     margin: 0 0 1em 0;
   }
 
-  h1, h3, h4, h5, h6 {
-    color: #5385c1;
+  h1, h2, h3, h4, h5, h6 {
+    color: #f8f8f6;
     font-weight: 300;
     line-height: 1.5;
     margin: 0 0 1em 0;
@@ -1675,7 +1667,6 @@
     }
 
   h2 {
-    color: #111 !important;
     font-size: 2.5em;
     font-weight: 500;
   }
@@ -1685,12 +1676,6 @@
     font-weight: 500;
     margin-top:1em !important;
     margin-bottom:0.49em !important;
-  }
-  
-  .special-heading {
-    font-size: 1.80em !important;
-    font-weight: 400;
-    color: #20202a !important;
   }
 
   h4 {
@@ -1753,7 +1738,7 @@
 
   hr {
     border: 0;
-    border-bottom: solid 1px #dbdbdb;
+    border-bottom: solid 2px #b8b8f3;
     margin: 2em 0;
   }
 
@@ -1831,8 +1816,7 @@
     }
 
       section.wrapper.style1 header h2, article.wrapper.style1 header h2 {
-        color: #fff !important;
-        font-size: 2em;
+        color: #fff;
       }
 
       section.wrapper.style1 header p, article.wrapper.style1 header p {
@@ -1840,7 +1824,7 @@
       }
 
       section.wrapper.style1 h3, article.wrapper.style1 h3 {
-        color: #FFF !important;
+        color: #FFF;
       }
 
     @media screen and (max-width: 980px) {
@@ -2201,8 +2185,7 @@
 /* Box */
 
   .box {
-    border: solid 4px #cedbe5;
-    background: #cedbe5;
+    border: solid 0px #2a4494;
     margin-bottom: 2em;
     padding: 1.5em;
   }
@@ -2237,17 +2220,17 @@
         }
 
   aside.box {
-    background: #ebebeb;
+    background: #3d405b;
   }
 
   @media screen and (min-width: 1024px) {
 
     aside.box {
-      width: 100%;
-      float: none;
+      max-width: 600px;
+      float: right;
       display: inline-block;
       margin: 1em 0 1em 2em;
-      background: #ebebeb;
+      background: #292930;
     }
 
   }
@@ -2345,19 +2328,12 @@
 
   ul {
     list-style: disc;
-    margin: 0 0 0em 0;
+    margin: 0 0 2em 0;
     padding-left: 1em;
-  }
-
-  .no-bullets {
-    list-style-type: none;
-    margin: 0 0 0em 0;
-    padding: 0 4%;
   }
 
     ul li {
       padding-left: 0.5em;
-      margin-bottom: 15px;
     }
 
     ul.alt {
@@ -2706,8 +2682,8 @@
     input[type="button"].special,
     button.special,
     .button.special {
-      background-color: #5385c1;
-      color: #ffffff !important;
+      background-color: #b8b8f3;
+      color: #020402 !important;
     }
 
       input[type="submit"].special:hover,
@@ -2881,46 +2857,6 @@
 
   }
 
-  /* Style for the navigation bar */
-
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #326db2;
-  text-align: center;
-}
-
-.navbar li {
-  display: inline;
-}
-
-.navbar li a {
-  display: inline-block;
-  color: white!important;
-  text-align: center;
-  padding: 14px 25px;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-.navbar li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.navbar .active {
-  background-color: #639ac1;
-}
-
-@media (max-width: 768px) {
-  .navbar li a {
-    padding: 14px 10px; /* Adjust the padding for smaller screens */
-    font-size: 1em; /* Adjust the font size for smaller screens */
-  }
-}
-
-
 /* Nav */
 
   @media screen and (max-width: 980px) {
@@ -3025,23 +2961,23 @@
 
   #banner {
     padding: 12em 0 10em 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../../images/banner.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../../images/banner.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: scroll;
     background-repeat: no-repeat;
     text-align: center;
-    border-top: 0.5em solid #fff;
+    border-top: 0.5em solid #5385c1;
   }
 
     #banner h1 {
-      font-size: 4em;
-      font-weight: 800;
-      color: #fff;
+      font-size: 4.5em;
+      font-weight: 1000;
+      color: #f8f8f6;
       line-height: 1em;
-      margin: 0 4em 0.5em 4em;
+      margin: 0 0 0.5em 0;
       padding: 0 2em;
-      text-shadow: 1px 1px 2px #555
+      text-shadow: 1px 1px 2px #
     }
 
     #banner p {
@@ -3062,9 +2998,6 @@
 
       #banner {
         padding: 10em 2em 8em 2em;
-      }
-      #banner h1 {
-        margin: 0 0 0.5em 0;
       }
 
     }
