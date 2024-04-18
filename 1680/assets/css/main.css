@@ -2221,6 +2221,19 @@
     background: #ebebeb;
   }
 
+
+/* Style for the grid */
+.details-grid {
+    display: grid; 
+    grid-template-columns: 150px auto; /* Adjust '150px' for desired label width */
+    gap: 10px; /* Adjust spacing between grid items */
+}
+
+.detail-label {
+    font-weight: bold; 
+}
+
+
   @media screen and (min-width: 1024px) {
 
     aside.box {
