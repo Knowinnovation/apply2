@@ -2981,6 +2981,13 @@
     border-top: 0.5em solid #5385c1;
   }
 
+.banner-text {
+    background-color: rgba(50, 50, 50, 0.6); /* Grey with 60% opacity */
+    color: white;  
+    padding: 3em;  /* Padding around the text */
+    text-align: center; /* Optional: Center the text */
+}
+
     #banner h1 {
       font-size: 3.5em;
       font-weight: 400;
