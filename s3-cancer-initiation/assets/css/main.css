@@ -2185,9 +2185,10 @@
 /* Box */
 
   .box {
-    border: solid 4px #ebebeb;
+    border: solid px #ebebeb;
     margin-bottom: 2em;
     padding: 1.5em;
+    background: #ebebeb;
   }
 
     .box > :last-child,
