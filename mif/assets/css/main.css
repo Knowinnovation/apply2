@@ -1655,7 +1655,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: pink;
+    color: #f8f8f6;
     font-weight: 300;
     line-height: 1.5;
     margin: 0 0 1em 0;
@@ -1676,6 +1676,7 @@
     font-weight: 500;
     margin-top:1em !important;
     margin-bottom:0.49em !important;
+    color: pink !important;
   }
 
   h4 {
