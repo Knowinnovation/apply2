@@ -3095,9 +3095,171 @@
 
   }
 
+  
 /* Custom CSS : ) */
 
 iframe.vimeo {
   border-radius: .2em;
+}
+
+.mentors-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.mentors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Make the last 2 mentors span to center them in the second row */
+.mentor-card:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.mentor-card:nth-child(5) {
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 900px) {
+    .mentors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .mentor-card:nth-child(4),
+    .mentor-card:nth-child(5) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .mentors-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+.mentor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* This distributes space evenly */
+    width: 250px; /* Fixed width */
+    height: 500px; /* Fixed height - adjust as needed */
+    max-width: 250px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mentor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mentor-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    border: 4px solid #e9ecef;
+}
+
+.mentor-photo:hover {
+    opacity: 0.7;
+    filter: brightness(0.8);
+}
+
+.mentor-name {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 2.8em; /* Fixed height for name area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentor-title {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.4;
+    height: 4em; /* Fixed height for title area */
+    overflow: hidden; /* Prevents text from breaking layout */
+
+}
+
+/* If you need the button to stay at the bottom */
+.mentor-website-btn {
+    background: #020956;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: auto; /* Pushes button to bottom */
+}
+
+.mentor-website-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    background: #3233D2;
+}
+
+
+
+/* For very long names, you can allow them to wrap to 2 lines max */
+.mentor-name {
+    line-height: 1.2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .mentors-grid {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mentors-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .mentor-photo {
+        width: 160px;
+        height: 160px;
+    }
 }
 
