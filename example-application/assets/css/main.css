@@ -19,6 +19,23 @@
     vertical-align: baseline;
   }
 
+#cycle{
+  max-width: 300px !important;
+}
+
+.image-container {
+  max-width: 300px; 
+  margin: 0; 
+}
+
+.image-container figcaption {
+  font-size: 9px; 
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px !important;
+  color: #555; 
+}
+
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
   }
