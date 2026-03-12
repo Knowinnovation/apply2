@@ -29,9 +29,10 @@
 }
 
 .image-container figcaption {
-  font-size: 12px; 
+  font-size: 9px; 
   text-align: center;
-  margin-top: 8px; 
+  margin-top: 8px;
+  margin-bottom: 8px;
   color: #555; 
 }
 
