@@ -10,6 +10,90 @@
 
 /* Reset */
 
+
+/*Gemini experiment*/
+
+/* Container styling to keep content centered */
+.subject-guide-team {
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light background for contrast, adjust as needed */
+  font-family: Arial, sans-serif; 
+}
+
+.subject-guide-team .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subject-guide-team h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.team-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Grid layout for the team members */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Individual team member card */
+.team-member {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image styling */
+.member-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1; /* Keeps images square, remove if you want natural proportions */
+}
+
+/* Information container */
+.member-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.member-name {
+  margin: 0 0 5px 0;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.member-title {
+  margin: 0 0 15px 0;
+  font-weight: bold;
+  color: #0056b3; /* Adjust to match your brand color */
+  font-size: 0.9rem;
+}
+
+.member-bio p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/*end Gemini Experiment*/
+
   html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
