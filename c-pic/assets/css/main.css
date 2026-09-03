@@ -2692,24 +2692,35 @@
     .button.special {
       background-color: #D60571;
       color: #ffffff !important;
-      /*visibility: hidden;*/
+    }
+    .button.special.secondary {
+      background-color: #69C8F0;
+      color: #000 !important;
     }
 
-      input[type="submit"].special:hover,
-      input[type="reset"].special:hover,
-      input[type="button"].special:hover,
-      button.special:hover,
-      .button.special:hover {
-        background-color: #69C8F0;
-      }
+    input[type="submit"].special:hover,
+    input[type="reset"].special:hover,
+    input[type="button"].special:hover,
+    button.special:hover,
+    .button.special:hover {
+      background-color: #69C8F0;
+      color: #000 !important;
+    }
+    .button.special.secondary:hover {
+      background-color: #2E247A;
+      color: #fff !important;
+    }
 
-      input[type="submit"].special:active,
-      input[type="reset"].special:active,
-      input[type="button"].special:active,
-      button.special:active,
-      .button.special:active {
-        background-color: #2E247A;
-      }
+    input[type="submit"].special:active,
+    input[type="reset"].special:active,
+    input[type="button"].special:active,
+    button.special:active,
+    .button.special:active {
+      background-color: #2E247A;
+    }
+    .button.special.secondary:active {
+      color: #fff !important;
+    }
 
     input[type="submit"].disabled, input[type="submit"]:disabled,
     input[type="reset"].disabled,
